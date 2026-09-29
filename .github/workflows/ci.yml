@@ -3,11 +3,19 @@ env:
   APP_NAME: calculator-api
 on:
   workflow_dispatch:
-    branches: [main]
-  # push:
-  #   branches: [main]  
-  # pull_request:
-  #   branches: [main] 
+    inputs:
+      environment:
+        description: Select Environment
+        required: true
+        type: choice
+        options:
+          - dev
+          - staging
+          - production
+  push:
+    branches: [main]  
+  pull_request:
+    branches: [main] 
 
 jobs:
   test:
