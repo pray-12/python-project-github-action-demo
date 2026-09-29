@@ -37,8 +37,8 @@ jobs:
     runs_on: ubuntu-latest
     steps:
       - name: Deploy to staging
-    env:
-        DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
-    run: |
-      echo "Deploying $APP_NAME to ${{ vars.DEPLOY_URL }}"
-      [ -n "$DEPLOY_TOKEN" ]
+        env:
+          DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+        run: |
+          echo "Deploying $APP_NAME to ${{ vars.DEPLOY_URL }}"
+          [ -n "$DEPLOY_TOKEN" ]
