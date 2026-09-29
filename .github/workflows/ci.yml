@@ -27,4 +27,4 @@ jobs:
           echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login \
             -u "${{ secrets.DOCKERHUB_USERNAME }}" \
             --password-stdin
-          echo "Docker Hub login completed."
+          echo "Docker Hub login completed. logging username is ${{ secrets.DOCKERHUB_USERNAME }}"
