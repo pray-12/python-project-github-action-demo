@@ -49,5 +49,5 @@ jobs:
         env:
           DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
         run: |
-          echo "Deploying $APP_NAME to ${{ vars.DEPLOY_URL }}"
+          echo "Deploying ${{ APP_NAME }} to ${{ vars.DEPLOY_URL }}"
           [ -n "$DEPLOY_TOKEN" ]
