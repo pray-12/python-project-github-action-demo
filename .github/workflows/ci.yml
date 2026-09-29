@@ -29,4 +29,4 @@ jobs:
           echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login \
             -u "${{ secrets.DOCKERHUB_USERNAME }}" \
             --password-stdin
-          echo "Docker Hub login completed. logging username is ${{ secrets.DOCKERHUB_USERNAME }}. app name is $APP_NAME"
+          echo "Docker Hub login completed. logging username is ${{ secrets.DOCKERHUB_USERNAME }}. app name is ${{ env.APP_NAME }} and py version is $${{ vars.PYTHON_VERSION }}"
