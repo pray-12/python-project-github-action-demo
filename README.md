@@ -47,7 +47,7 @@ pytest -v        # run all tests
 flake8 .         # check code style
 ```
 
-## CI/CD roadmap (we'll build these one by one)
+## CI/CD roadmap (we'll build these one by one) 
 
 - [ ] 1. First workflow — run tests on every push / pull request
 - [ ] 2. Add linting (flake8) to the pipeline
@@ -58,3 +58,4 @@ flake8 .         # check code style
 - [ ] 7. Push the image to a registry (GitHub Container Registry)
 - [ ] 8. Deploy (secrets, environments, manual approvals)
 - [ ] 9. Release on git tags
+
